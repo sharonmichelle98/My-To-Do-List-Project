@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(247, 165, 165);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Verdana, sans-serif
+}
+
+.todo-wrapper{
+    margin-top: 50px;
+    background-color: rgb(255, 251, 235);
+    border-radius: 50px 20px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    font-weight: 250;
+    height: auto
+}
+
+.todo-wrapper h2{
+    margin: 0;
+    color:rgb(41, 38, 38)
+}
+
+.todo-wrapper p{
+    font-style: italic;
+    color: grey;
+    margin: 4px 0;
+}
+
+.todo-wrapper ol{
+    margin: 20px 0;
+    color:rgb(41, 38, 38)
+}
+
+.todo-wrapper ol li{
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5 ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: rgb(231, 228, 228);
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-wrapper .beautiful-button{
+    margin: 10px 2px;
+    color: white;
+    background-color: #0a89c4;
+    border-radius: 16px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    font-weight: 600;
+}
+
+.todo-wrapper .beautiful-button:hover{
+    cursor:pointer;
+    opacity: 0.65;
+}
+
+.todo-wrapper input{
+    padding: 8px 20px;
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #666;
+    border-width: 1px;  
+}
+
+.todo-wrapper form{
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+    background-color: #49B749;
+}
+
+.todo-wrapper #empty-button {
+    background-color: #ce161c;
+}
+
+.todo-wrapper #save-button {
+    background-color: #0fb978;
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 80% ;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
+}
